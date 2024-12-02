@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+
+        <!-- Add User Form -->
+        <section>
+            <h2>Add User</h2>
+            <form id="addUserForm">
+                <label for="userId">User ID:</label>
+                <input type="number" id="userId" name="userId" required>
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" name="userName" required>
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" name="userEmail" required>
+                <button type="submit">Add User</button>
+            </form>
+            <div id="addUserResponse"></div>
+        </section>
+
+        <!-- Get User Form -->
+        <section>
+            <h2>Get User</h2>
+            <form id="getUserForm">
+                <label for="getUserId">User ID:</label>
+                <input type="number" id="getUserId" name="getUserId" required>
+                <button type="submit">Get User</button>
+            </form>
+            <div id="getUserResponse"></div>
+        </section>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>

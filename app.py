@@ -87,6 +87,6 @@ class UserApp:
 
 
 if __name__ == "__main__":
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/ragnarlothbrok/Desktop/atlys/Terraform/ragnar-07-8f816f54d8e2.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "your_json_key.json"
     app = UserApp()
     app.run()
